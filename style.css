@@ -1,0 +1,112 @@
+:root {
+  --primary-color-yellow: hsl(47, 88%, 63%);
+  --neutral-color-white: hsl(0, 0%, 100%);
+  --neutral-color-grey: hsl(0, 0%, 50%);
+  --neutral-color-black: hsl(0, 0%, 7%);
+}
+
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--neutral-color-black);
+  background-color: var(--primary-color-yellow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  border: 1px solid var(--neutral-color-black);
+  background-color: var(--neutral-color-white);
+  max-width: 376px;
+  margin: 0 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  box-shadow: 8px 8px 0px 0px var(--neutral-color-black);
+}
+
+.container .wrapper {
+  margin: 18px;
+}
+
+.container .wrapper .hero {
+  overflow: hidden;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+.container .wrapper .hero img {
+  width: 100%;
+  display: block;
+}
+
+.container .wrapper .content {
+  margin: 20px 0;
+}
+
+.container .wrapper .content h2 {
+  width: fit-content;
+  font-size: 16px;
+  font-weight: 800;
+  padding: 6px 16px;
+  margin-bottom: 14px;
+  background-color: var(--primary-color-yellow);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.container .wrapper .content p:nth-child(3) {
+  font-size: 25px;
+  font-weight: 800;
+  margin: 16px 0;
+}
+
+.container .wrapper .content p:nth-child(3):hover {
+  color: var(--primary-color-yellow);
+  transition: color 0.3s;
+  cursor: pointer;
+}
+
+.container .wrapper .content p:nth-child(4) {
+  color: var(--neutral-color-grey);
+  line-height: 1.4;
+}
+
+.container .wrapper .footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.container .wrapper .footer img {
+  width: 30px;
+}
+
+.container .wrapper .footer p {
+  font-weight: 800;
+  font-size: 14px;
+}
